@@ -47,19 +47,15 @@ const mapNewStrategyToShape = new Map<string, string>([
   ['B X', 'B X'],
 ]);
 
-// Round 1
+// Round 1 & 2
 rockPaperScissorRounds.forEach((round) => {
-  const points = playRound.get(round);
+  const round1Points = playRound.get(round);
+  totalScorePart1 += round1Points!;
 
-  totalScorePart1 += points!;
-});
-
-//Round 2
-rockPaperScissorRounds.forEach((round) => {
   const getShape = mapNewStrategyToShape.get(round);
-  const points = playRound.get(getShape!);
+  const round2points = playRound.get(getShape!);
 
-  totalScorePart2 += points!;
+  totalScorePart2 += round2points!;
 });
 
 console.log('Answer for question 1: ', totalScorePart1);
