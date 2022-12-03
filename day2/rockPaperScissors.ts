@@ -1,4 +1,3 @@
-//ts-ignore
 import * as fs from 'fs';
 
 const fileValues = fs.readFileSync('input.txt', 'utf8');
