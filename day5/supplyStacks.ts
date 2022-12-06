@@ -14,10 +14,6 @@ const getStacks = (lines: string[]): string[][] => {
     return acc;
   }, []);
 };
-const test = (lines: string[]) => {
-  return lines.filter((line) => line.charAt(1) === '1');
-  // .map((line) => line.match(/\d+/gi).map((l) => parseInt(l)));
-};
 
 const getInstructions = (lines: string[]) => {
   return lines
@@ -50,7 +46,6 @@ const solve = (input: string, crateMoverVersion: crateMoverVersion) => {
 
   const stacks = getStacks(lines);
   const instructions = getInstructions(lines);
-  console.log(test(lines));
 
   instructions.forEach((instruction) =>
     move(stacks, instruction, crateMoverVersion)
