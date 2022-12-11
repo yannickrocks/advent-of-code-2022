@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-const fileValues = fs.readFileSync('input.txt', 'utf8');
+const fileValues = fs.readFileSync('day7/input.txt', 'utf8');
 
 type FileTree = { [key: string]: string[] };
 type FileSize = { [key: string]: number };

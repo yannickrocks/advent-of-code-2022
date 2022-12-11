@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-const fileValues = fs.readFileSync('input.txt', 'utf8');
+const fileValues = fs.readFileSync('day4/input.txt', 'utf8');
 
 let initialCampCleanUpPairs = fileValues.split('\r\n');
 

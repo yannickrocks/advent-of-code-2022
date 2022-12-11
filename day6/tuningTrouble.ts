@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-const fileValues = fs.readFileSync('input.txt', 'utf8');
+const fileValues = fs.readFileSync('day6/input.txt', 'utf8');
 
 const solve = (input: string, markerOrMessage: number) => {
   const lines = input.split('');

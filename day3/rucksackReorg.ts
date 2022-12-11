@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-const fileValues = fs.readFileSync('input.txt', 'utf8');
+const fileValues = fs.readFileSync('day3/input.txt', 'utf8');
 
 let rucksacks = fileValues.split('\r\n');
 

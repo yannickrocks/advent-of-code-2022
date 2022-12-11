@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-const fileValues = fs.readFileSync('input.txt', 'utf8');
+const fileValues = fs.readFileSync('day8/input.txt', 'utf8');
 
 const trees: number[][] = fileValues
   .split('\r\n')

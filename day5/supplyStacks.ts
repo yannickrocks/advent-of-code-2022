@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-const fileValues = fs.readFileSync('input.txt', 'utf8');
+const fileValues = fs.readFileSync('day5/input.txt', 'utf8');
 
 const getStacks = (lines: string[]): string[][] => {
   return lines.reduce((acc, line) => {
